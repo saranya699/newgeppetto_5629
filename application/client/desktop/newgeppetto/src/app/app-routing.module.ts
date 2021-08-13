@@ -25,6 +25,7 @@ const routes: Routes = [
 { path: 'admin', component: AdminComponent, canActivate: [AuthGuard] },
 
 { path : 'screentest1', loadChildren: () => import('./screentest1/screentest1.module').then(m => m.Screentest1Module), canActivate: [AuthGuard] } , 
+{ path : 'screentest2', loadChildren: () => import('./screentest2/screentest2.module').then(m => m.Screentest2Module), canActivate: [AuthGuard] } , 
 ];
 
 @NgModule({
